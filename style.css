@@ -1,0 +1,204 @@
+body {
+    margin-left: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+@font-face {
+  font-family: 'TekoRegular';
+  src: url('fonts/Teko-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'TekoBold';
+  src: url('fonts/Teko-Bold.ttf');
+}
+
+.rectStaticNew {
+  height: 8.3vw;
+  width: 80.1vw;
+  background-color: white;
+  margin-top: 44vw;
+  position: fixed; 
+  margin-left: 6vw;
+  z-index: 2;
+}
+
+  #staticNew {
+    font-family: 'TekoRegular', sans-serif;
+    font-size: 5.33vw;
+    margin-top: 43.2vw;
+    position: fixed; 
+    padding: 1.5vw;
+    margin-left: 6.5vw;
+    color: black;
+    z-index: 999;
+}
+
+.rectRed1 {
+  height: 10.8vw;
+  width: 16.5vw;
+  background-color: red;
+  margin-top: 41.5vw;
+  position: fixed; 
+  margin-left: 5.1vw;
+  z-index: 1;
+}
+
+#breaking {
+    font-family: arial, sans-serif;
+    font-size: 1.6vw;
+    margin-top: 41.85vw;
+    margin-left: 6.7vw;
+    color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.rectLive {
+  height: 2.3vw;
+  width: 8.1vw;
+  background-color: red;
+  margin-top: 41.5vw;
+  position: fixed; 
+  margin-left: 87.1vw;
+  z-index: 1;
+
+}
+
+#live {
+  font-family: arial, sans-serif;
+  font-size: 1.1vw;
+  margin-left: 89.9vw;
+  margin-top: 42vw;
+  position: fixed;
+  box-sizing: border-box;
+  color: white;
+  z-index: 2;
+}
+
+.rectTime {
+  height: 2.3vw;
+  width: 8.1vw;
+  background-color: black;
+  margin-top: 50vw;
+  position: fixed; 
+  margin-left: 87.1vw;
+  z-index: 1;
+
+}
+
+#time {
+    font-family: arial, sans-serif;
+    font-size: 1.1vw;
+    margin-left: 89.7vw;
+    margin-top: 50.5vw;
+    position: fixed;
+    color: white;
+    z-index: 999;
+}
+
+.rectRed2 {
+  height: 2.44vw;
+  width: 16.5vw;
+  background-color: red;
+  margin-top: 52.7vw;
+  position: fixed; 
+  margin-left: 5.1vw;
+  z-index: 99;
+}
+
+#countryName {
+  font-family: arial, sans-serif;
+  font-size: 1.1vw;
+  margin-top: 53.28vw;
+  margin-left: 6.7vw;
+  color: white;
+  position: fixed;
+  z-index: 999;
+}
+
+
+
+
+
+
+
+#newsTicker {
+    font-family: arial, sans-serif;
+    position: fixed;
+    width: 75.2%;
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 52.7vw;
+    padding-top: 0.35vw;
+    padding-bottom: 0.35vw;
+    z-index: 2;
+}
+
+#newsTicker p {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5vw;
+    padding-left: 100%;
+    animation: tickerTape 50s linear infinite;
+}
+  
+@keyframes tickerTape {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+}
+  
+
+
+
+
+
+
+
+
+
+
+/*
+.video-wrapper {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  
+}
+  video {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+*/
+
+
+video {
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+width: 100%; 
+
+}
+
+
+/* Não permitir a seleção de texto com o cursor, de modo a aumentar a experiência interativa | (https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting) */ 
+html, body, div, span, applet, object, iframe,
+* { 
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
